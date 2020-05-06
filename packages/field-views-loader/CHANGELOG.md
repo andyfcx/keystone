@@ -1,5 +1,14 @@
 # @keystonejs/field-views-loader
 
+## 6.0.0
+
+### Major Changes
+
+- [`08087998`](https://github.com/keystonejs/keystone/commit/08087998af0045aa45b26d721f75639cd279ae1b) [#2881](https://github.com/keystonejs/keystone/pull/2881) Thanks [@timleslie](https://github.com/timleslie)! - The default function in `@keystonejs/field-views-loader` now takes `{ pages, hooks, listViews }` rather than `{ adminMeta }`.
+  `AdminUIApp` now has a method `.getAdminViews({ keystone, includeLists })` which returns these values.
+  `AdminUIApp.createDevMiddleware` now takes `{ adminMeta, keystone }` as arguments.
+  These changes will only effect users who may have explicitly been using the `@keystone/fields-views-loader` packages or `.createDevMiddleware()`.
+
 ## 5.2.1
 
 ### Patch Changes

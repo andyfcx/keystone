@@ -1,5 +1,15 @@
 # @keystonejs/list-plugins
 
+## 5.2.1
+
+### Patch Changes
+
+- [`c3270e50`](https://github.com/keystonejs/keystone/commit/c3270e50a11ee328a31c4a8d8e77ee7ef873881c) [#2837](https://github.com/keystonejs/keystone/pull/2837) Thanks [@gautamsi](https://github.com/gautamsi)! - Tweaked hooks and utility function.
+  - Renamed `composeResolveInput` utility function to `composeHook` to indicate right use by name, this can also be used in other hook type and not just `resolveInput` hook.
+  - Switch to use of `operation` param to hook for detecting if this is `create` or `update` operation instead of existingItem being `undefined`.
+- Updated dependencies [[`72e0a4e1`](https://github.com/keystonejs/keystone/commit/72e0a4e19942df11c72d11c2cf6ee9bc94300d87), [`6e507838`](https://github.com/keystonejs/keystone/commit/6e5078380e1d17eb2884554eef114fdd521a15f4), [`e2800875`](https://github.com/keystonejs/keystone/commit/e28008756cbcc1e07e012a9fdb0cfa0ad94f3673), [`60e2c7eb`](https://github.com/keystonejs/keystone/commit/60e2c7eb2298a016c68a19a056040a3b45beab2a), [`99da34a8`](https://github.com/keystonejs/keystone/commit/99da34a8db26b8861b08cee330407605e787a80c), [`e765ad20`](https://github.com/keystonejs/keystone/commit/e765ad20abae9838f64b72b7d43767ec87db336a), [`d7eb2601`](https://github.com/keystonejs/keystone/commit/d7eb260144d2aa31e7ef4e636e7a23f91dc37285)]:
+  - @keystonejs/fields@9.1.0
+
 ## 5.2.0
 
 ### Minor Changes
